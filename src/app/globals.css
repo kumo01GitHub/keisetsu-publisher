@@ -1,12 +1,10 @@
 :root {
-  --background: #f1ece1;
+  --background: #f8f8f8;
   --foreground: #1a1b1d;
-  --surface: rgba(255, 252, 245, 0.82);
-  --surface-strong: #fff7eb;
-  --line: rgba(26, 27, 29, 0.08);
-  --accent: #b45309;
-  --accent-dark: #7c2d12;
-  --mint: #0f766e;
+  --surface: #fff;
+  --surface-strong: #f5f0e5;
+  --line: #ececec;
+  --accent: #0f766e;
 }
 
 html,
@@ -21,10 +19,6 @@ body {
   font-family: var(--font-body), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image:
-    radial-gradient(circle at top left, rgba(180, 83, 9, 0.18), transparent 28%),
-    radial-gradient(circle at 85% 15%, rgba(15, 118, 110, 0.18), transparent 22%),
-    linear-gradient(180deg, #f5f0e5 0%, #efe6d6 100%);
 }
 
 * {

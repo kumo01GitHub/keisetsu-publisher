@@ -10,10 +10,10 @@
 .deckMetaPanel,
 .editorPanel,
 .downloadPanel {
-  border-radius: 26px;
-  border: 1px solid rgba(15, 23, 42, 0.12);
-  background: rgba(255, 252, 246, 0.86);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: none;
 }
 
 .hero {
@@ -21,17 +21,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
   gap: 18px;
-  background:
-    linear-gradient(180deg, rgba(255, 252, 246, 0.9), rgba(255, 247, 235, 0.8)),
-    radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.18), transparent 40%),
-    radial-gradient(circle at 85% 10%, rgba(180, 83, 9, 0.2), transparent 30%);
+  background: var(--surface-strong);
 }
 
 .kicker {
   font-family: var(--font-mono), monospace;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #0f766e;
+  color: var(--accent);
   margin-bottom: 12px;
 }
 
@@ -71,14 +68,14 @@
 }
 
 .primaryAction {
-  background: linear-gradient(135deg, #0f766e, #0d9488);
-  color: #f0fdfa;
+  background: var(--accent);
+  color: #fff;
 }
 
 .secondaryAction {
-  background: #fef3c7;
-  color: #92400e;
-  border: 1px solid rgba(146, 64, 14, 0.24);
+  background: var(--surface-strong);
+  color: var(--foreground);
+  border: 1px solid var(--line);
   text-align: center;
 }
 
