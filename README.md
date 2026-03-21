@@ -3,6 +3,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/kumo01GitHub/keisetsu-publisher/pulls)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![CI](https://github.com/kumo01GitHub/keisetsu-publisher/actions/workflows/ci.yml/badge.svg)](https://github.com/kumo01GitHub/keisetsu-publisher/actions/workflows/ci.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a0da510a881f4e229b63f0db95009c33)](https://app.codacy.com/gh/kumo01GitHub/keisetsu-publisher/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/a0da510a881f4e229b63f0db95009c33)](https://app.codacy.com/gh/kumo01GitHub/keisetsu-publisher/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 
 keisetsu の deck 編集・生成ツールです。  
 Next.js 上で動作し、ブラウザ内で `.kdb` と deck manifest を生成します。
