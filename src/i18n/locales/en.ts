@@ -2,7 +2,7 @@ const en = {
   hero: {
     kicker: 'keisetsu publisher',
     heading: 'kdb Builder / Deck Editor',
-    lead: 'Create, import from CSV, or update an existing kdb — all in one screen. Generate kdb and deck json for distribution.',
+    lead: 'Create, import from CSV, or update an existing kdb — all in one screen. Generate kdb and deck manifest for distribution.',
     newDeck: 'New deck',
     importCsv: 'Create from CSV',
     importKdb: 'Load kdb to update',
@@ -23,10 +23,10 @@ const en = {
   },
   download: {
     heading: 'Export',
-    lead: 'Download kdb and deck json for distribution with a single click.',
+    lead: 'Download kdb and deck manifest for distribution with a single click.',
     kdbOnly: 'Download kdb only',
-    manifestOnly: 'Download deck json only',
-    bundle: 'Download kdb + deck json together',
+    manifestOnly: 'Download deck manifest only',
+    bundle: 'Download bundled ZIP',
   },
   defaults: {
     starterDeckTitle: 'Starter Basic Deck',
@@ -41,8 +41,8 @@ const en = {
     csvImported: 'Imported {{count}} cards from CSV.',
     kdbImported: 'kdb loaded. Cards: {{count}}',
     kdbDownloaded: 'kdb exported: {{fileName}}',
-    manifestDownloaded: 'deck json exported: {{fileName}}',
-    bundleDownloaded: 'kdb + deck json bundle ZIP exported.',
+    manifestDownloaded: 'deck manifest exported: {{fileName}}',
+    bundleDownloaded: 'kdb + deck manifest bundle ZIP exported.',
   },
   error: {
     titleRequired: 'Please enter a deck title.',

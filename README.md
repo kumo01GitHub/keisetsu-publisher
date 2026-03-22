@@ -81,7 +81,7 @@ npm run build
 1. Open the app with `npm run dev`
 2. Enter cards directly, or import via CSV/kdb
 3. Adjust deck meta info (ID, title, language, etc.)
-4. Download as `kdb only`, `deck json only`, or `bundled ZIP`
+4. Download as `kdb only`, `deck manifest only`, or `bundled ZIP`
 5. Reflect the generated files in `keisetsu-database` and verify
 
 ## Deployment

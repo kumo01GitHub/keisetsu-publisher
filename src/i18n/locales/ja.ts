@@ -2,7 +2,7 @@ const ja = {
   hero: {
     kicker: 'keisetsu publisher',
     heading: 'kdb Builder / Deck Editor',
-    lead: '新規作成、CSV作成、既存kdb更新を1画面で行い、配布用のkdbとdeck jsonを生成します。',
+    lead: '新規作成、CSV作成、既存kdb更新を1画面で行い、配布用のkdbとdeck manifestを生成します。',
     newDeck: '新規作成',
     importCsv: 'CSVから作成',
     importKdb: 'kdbを読み込んで更新',
@@ -23,10 +23,10 @@ const ja = {
   },
   download: {
     heading: '出力',
-    lead: '配布向けのkdbとdeck jsonをボタンクリックでダウンロードできます。',
+    lead: '配布向けのkdbとdeck manifestをボタンクリックでダウンロードできます。',
     kdbOnly: 'kdbのみダウンロード',
-    manifestOnly: 'deck jsonのみダウンロード',
-    bundle: 'kdb + deck json を同時ダウンロード',
+    manifestOnly: 'deck manifestのみダウンロード',
+    bundle: '同梱ZIPをダウンロード',
   },
   defaults: {
     starterDeckTitle: 'スターター基本単語帳',
@@ -41,8 +41,8 @@ const ja = {
     csvImported: 'CSVから {{count}} 件を読み込みました。',
     kdbImported: 'kdbを読み込みました。カード件数: {{count}}',
     kdbDownloaded: 'kdbを出力しました: {{fileName}}',
-    manifestDownloaded: 'deck jsonを出力しました: {{fileName}}',
-    bundleDownloaded: 'kdb + deck json の同梱ZIPを出力しました。',
+    manifestDownloaded: 'deck manifestを出力しました: {{fileName}}',
+    bundleDownloaded: 'kdb + deck manifest の同梱ZIPを出力しました。',
   },
   error: {
     titleRequired: '単語帳タイトルを入力してください。',
