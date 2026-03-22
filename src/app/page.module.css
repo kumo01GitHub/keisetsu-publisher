@@ -10,7 +10,7 @@
 .deckMetaPanel,
 .editorPanel,
 .downloadPanel {
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid var(--line);
   background: var(--surface);
   box-shadow: none;
@@ -39,7 +39,8 @@
 }
 
 .lead {
-  color: rgba(15, 23, 42, 0.75);
+  color: #1a1b1d;
+  opacity: 0.7;
   line-height: 1.8;
   max-width: 46ch;
 }
@@ -54,30 +55,86 @@
   display: none;
 }
 
-.primaryAction,
-.secondaryAction,
-.smallAction,
-.secondarySolid,
-.deleteAction {
-  border: none;
+.primaryAction {
+  border: 1.5px solid var(--accent);
   border-radius: 14px;
   padding: 12px 14px;
   font-weight: 800;
   font-size: 0.95rem;
   cursor: pointer;
-}
-
-.primaryAction {
   background: var(--accent);
   color: #fff;
+  transition: background 0.15s, border-color 0.15s;
+}
+.primaryAction:hover {
+  background: #155e57;
+  border-color: #155e57;
+}
+.secondaryAction {
+  border: 1.5px solid #38bdf8;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #e0f2fe;
+  color: #0c4a6e;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+.secondaryAction:hover {
+  background: #bae6fd;
+  border-color: #0ea5e9;
+}
+.secondarySolid {
+  border: 1.5px solid #38bdf8;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #e0f2fe;
+  color: #0c4a6e;
+  transition: background 0.15s, border-color 0.15s;
+}
+.secondarySolid:hover {
+  background: #bae6fd;
+  border-color: #0ea5e9;
+}
+.smallAction {
+  border: 1.5px solid #a3e635;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #ecfccb;
+  color: #365314;
+  transition: background 0.15s, border-color 0.15s;
+}
+.smallAction:hover {
+  background: #d9f99d;
+  border-color: #84cc16;
+}
+.deleteAction {
+  border: 1.5px solid #fca5a5;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #fee2e2;
+  color: #991b1b;
+  transition: background 0.15s, border-color 0.15s;
+}
+.deleteAction:hover {
+  background: #fecaca;
+  border-color: #ef4444;
 }
 
-.secondaryAction {
-  background: var(--surface-strong);
-  color: var(--foreground);
-  border: 1px solid var(--line);
-  text-align: center;
-}
+
+
+
 
 .deckMetaPanel,
 .editorPanel,

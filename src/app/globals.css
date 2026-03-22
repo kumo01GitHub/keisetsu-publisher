@@ -1,8 +1,8 @@
 :root {
-  --background: #f8f8f8;
+  --background: #fff;
   --foreground: #1a1b1d;
   --surface: #fff;
-  --surface-strong: #f5f0e5;
+  --surface-strong: #ececec;
   --line: #ececec;
   --accent: #0f766e;
 }
