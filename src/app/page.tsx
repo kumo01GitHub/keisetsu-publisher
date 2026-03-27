@@ -281,47 +281,7 @@ export default function Home() {
     };
   }
 
-  /**
-   * Exports only the SQLite deck file.
-   */
-  async function downloadKdbOnly() {
-    clearNotice();
 
-    if (!deckTitle.trim()) {
-      setErrorMessage(t('error.titleRequired'));
-      return;
-    }
-
-    if (normalizedCards.length === 0) {
-      setErrorMessage(t('error.noCards'));
-      return;
-    }
-
-    const kdbBytes = await buildKdbFileBytes(deckTitle.trim(), deckFileName, normalizedCards);
-    const payload = Uint8Array.from(kdbBytes);
-    downloadBlob(deckFileName, new Blob([payload], { type: 'application/octet-stream' }));
-    setStatusMessage(t('status.kdbDownloaded', { fileName: deckFileName }));
-  }
-
-  /**
-   * Exports only the JSON manifest for catalog publication.
-   */
-  function downloadManifestOnly() {
-    clearNotice();
-
-    if (!deckTitle.trim()) {
-      setErrorMessage(t('error.titleRequired'));
-      return;
-    }
-
-    const manifest = makeDeckManifest();
-    const manifestName = `${manifest.id}.json`;
-    downloadBlob(
-      manifestName,
-      new Blob([`${JSON.stringify(manifest, null, 2)}\n`], { type: 'application/json' })
-    );
-    setStatusMessage(t('status.manifestDownloaded', { fileName: manifestName }));
-  }
 
   /**
    * Exports a publishable bundle containing both the manifest and database file.
@@ -482,12 +442,7 @@ export default function Home() {
         <h2>{t('download.heading')}</h2>
         <p>{t('download.lead')}</p>
         <div className={styles.downloadActions}>
-          <button className={styles.secondarySolid} onClick={() => void downloadKdbOnly()} type="button">
-            {t('download.kdbOnly')}
-          </button>
-          <button className={styles.secondarySolid} onClick={downloadManifestOnly} type="button">
-            {t('download.manifestOnly')}
-          </button>
+          {/* Only ZIP download button remains */}
           <button className={styles.primaryAction} onClick={() => void downloadBundle()} type="button">
             {t('download.bundle')}
           </button>

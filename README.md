@@ -16,9 +16,7 @@ It runs on Next.js and generates `.kdb` files and deck manifests directly in the
 - Create new decks and edit cards
 - Bulk import cards via CSV
 - Load and re-edit existing `.kdb` files
-- Generate `.kdb` files containing `deck_metadata` + `cards`
-- Generate deck manifests for placement in `keisetsu-database/catalog/decks/`
-- Generate ZIP files containing both `.kdb` and manifest
+- Generate ZIP files containing both `.kdb` and deck manifest for distribution
 
 ## Supported Languages
 
@@ -81,7 +79,7 @@ npm run build
 1. Open the app with `npm run dev`
 2. Enter cards directly, or import via CSV/kdb
 3. Adjust deck meta info (ID, title, language, etc.)
-4. Download as `kdb only`, `deck manifest only`, or `bundled ZIP`
+4. Download as a bundled ZIP (includes both `.kdb` and deck manifest)
 5. Reflect the generated files in `keisetsu-database` and verify
 
 ## Deployment

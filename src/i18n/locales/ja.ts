@@ -24,9 +24,7 @@ const ja = {
   download: {
     heading: '出力',
     lead: '配布向けのkdbとdeck manifestをボタンクリックでダウンロードできます。',
-    kdbOnly: 'kdbのみダウンロード',
-    manifestOnly: 'deck manifestのみダウンロード',
-    bundle: '同梱ZIPをダウンロード',
+    bundle: 'ダウンロード',
   },
   defaults: {
     starterDeckTitle: 'スターター基本単語帳',

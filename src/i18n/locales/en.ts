@@ -24,9 +24,7 @@ const en = {
   download: {
     heading: 'Export',
     lead: 'Download kdb and deck manifest for distribution with a single click.',
-    kdbOnly: 'Download kdb only',
-    manifestOnly: 'Download deck manifest only',
-    bundle: 'Download bundled ZIP',
+    bundle: 'Download',
   },
   defaults: {
     starterDeckTitle: 'Starter Basic Deck',
